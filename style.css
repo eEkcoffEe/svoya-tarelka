@@ -14,3 +14,5 @@
 .budget-price-row { display: grid; grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr)); gap: 8px; align-items: center; padding: 5px 0; }
 .budget-price-row label { min-width: 0; font-size: .85rem; }
 .budget-price-row input { width: 100%; }
+
+.plan-summary { line-height: 1.55; }
