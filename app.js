@@ -28,19 +28,24 @@ const screens=[
 ()=>page('Что есть на кухне?','Выберите доступную технику. Фильтр учитывает способы приготовления, указанные в названиях блюд.',opts(equipment,'gear')),
 ()=>page('Всё верно?','По этим настройкам соберём меню на семь дней.',`<p><b>Магазин</b> · ${esc(d.shop)}<br><b>Бюджет</b> · ${d.budget} ₽<br><b>Семья</b> · взрослых ${d.adults}, детей ${d.kids.length}<br><b>Приёмы пищи</b> · ${d.meals.join(', ')}<br><b>Исключения</b> · ${esc([...d.allergy,...d.avoid,d.custom].filter(Boolean).join(', ')||'нет')}<br><b>Техника</b> · ${d.gear.join(', ')||'без нагрева'}</p>`)
 ];app.innerHTML=screens[step]()}
-const catalogUrl=new URL('menus.json',document.currentScript.src);
+const catalogUrl=new URL('menus/index.json',document.currentScript.src);
 let catalog;
 let catalogRequest;
 let catalogError=false;
 
+async function fetchJson(url){
+  const response=await fetch(url);
+  if(!response.ok)throw new Error('Не удалось загрузить меню');
+  return response.json();
+}
+
 function loadCatalog(){
   if(catalogRequest)return;
-  catalogRequest=fetch(catalogUrl).then(response=>{
-    if(!response.ok)throw new Error('Не удалось загрузить меню');
-    return response.json();
-  }).then(data=>{
-    if(!Array.isArray(data.menus)||!data.menus.length)throw new Error('Каталог пуст');
-    catalog=data.menus;
+  catalogRequest=fetchJson(catalogUrl).then(index=>{
+    if(!Array.isArray(index.menus)||!index.menus.length)throw new Error('Каталог пуст');
+    return Promise.all(index.menus.map(file=>fetchJson(new URL(file,catalogUrl))));
+  }).then(menus=>{
+    catalog=menus;
   }).catch(()=>{
     catalogError=true;
   }).finally(()=>{
@@ -113,7 +118,6 @@ function buildPlan(){
   const list=new Map();
   const missing=new Set();
   const week=options.slice(set*7,set*7+7).map((menu,day)=>({
-    date:menu.date,
     meals:menu.meals.filter(meal=>d.meals.includes(meal.name)).map(meal=>{
       const dishes=meal.dishes.filter(dish=>fits(dish,excluded));
       const hot=meal.hotChoices.filter(dish=>fits(dish,excluded));
@@ -158,7 +162,7 @@ function result(){
     return;
   }
   const {week,list,missing}=buildPlan();
-  const menu=week.map(({date,meals},day)=>`<section class="day"><h3>${days[day]} · ${date.slice(8)}.${date.slice(5,7)}</h3>
+  const menu=week.map(({meals},day)=>`<section class="day"><h3>${days[day]}</h3>
     ${meals.map(({name,dishes,hot,choiceKey,selected,portions})=>{
       const select=hot.length>1?`<label class="field">Горячее на выбор
         <select data-hot="${esc(choiceKey)}">${hot.map(dish=>`<option ${dish===selected?'selected':''}>${esc(dish.name)}</option>`).join('')}</select>

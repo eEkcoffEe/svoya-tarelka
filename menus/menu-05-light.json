@@ -1,0 +1,393 @@
+{
+  "id": "menu-05-light",
+  "weekday": "пятница",
+  "name": "Лайт",
+  "source": {
+    "file": "Академия здорового образа 24(1).pdf",
+    "page": 9
+  },
+  "meals": [
+    {
+      "name": "Завтрак",
+      "dishes": [
+        {
+          "name": "Смузи с ягодами годжи",
+          "ingredients": [
+            "банан",
+            "клубника",
+            "ягоды годжи",
+            "молоко"
+          ],
+          "servingG": [
+            200
+          ],
+          "nutrition": {
+            "proteinG": 5.3,
+            "fatG": 1.2,
+            "carbohydratesG": 25.4,
+            "kcal": 134.8
+          }
+        },
+        {
+          "name": "Сыр Томмит",
+          "ingredients": [],
+          "servingG": [
+            15
+          ],
+          "nutrition": {
+            "proteinG": 5.7,
+            "fatG": 2.4,
+            "carbohydratesG": 0.0,
+            "kcal": 44.8
+          }
+        },
+        {
+          "name": "Хлебцы",
+          "ingredients": [],
+          "servingG": [
+            5
+          ],
+          "nutrition": {
+            "proteinG": 0.4,
+            "fatG": 0.2,
+            "carbohydratesG": 2.8,
+            "kcal": 14.8
+          }
+        },
+        {
+          "name": "Каша из киноа на кокосовом молоке с грецким орехом",
+          "ingredients": [],
+          "servingG": [
+            150
+          ],
+          "nutrition": {
+            "proteinG": 7.5,
+            "fatG": 4.8,
+            "carbohydratesG": 30.7,
+            "kcal": 196.4
+          }
+        },
+        {
+          "name": "Белок варёного куриного яйца",
+          "ingredients": [
+            "белок"
+          ],
+          "servingG": [
+            40
+          ],
+          "nutrition": {
+            "proteinG": 4.4,
+            "fatG": 0.0,
+            "carbohydratesG": 0.4,
+            "kcal": 19.4
+          }
+        },
+        {
+          "name": "Шоколад горький",
+          "ingredients": [],
+          "servingG": [
+            5
+          ],
+          "nutrition": {
+            "proteinG": 0.5,
+            "fatG": 2.1,
+            "carbohydratesG": 1.9,
+            "kcal": 28.1
+          }
+        }
+      ],
+      "hotChoices": [],
+      "sourceSubtotal": {
+        "proteinG": 23.8,
+        "fatG": 10.7,
+        "carbohydratesG": 61.2,
+        "kcal": 438.3
+      }
+    },
+    {
+      "name": "Второй завтрак",
+      "dishes": [
+        {
+          "name": "Омлет белковый с семенами чиа и авокадо",
+          "ingredients": [
+            "яйцо",
+            "молоко",
+            "семена чиа",
+            "лук репчатый",
+            "авокадо",
+            "лимон",
+            "масло растительное"
+          ],
+          "servingG": [
+            100
+          ],
+          "nutrition": {
+            "proteinG": 9.2,
+            "fatG": 11.8,
+            "carbohydratesG": 4.1,
+            "kcal": 159.7
+          }
+        }
+      ],
+      "hotChoices": [],
+      "sourceSubtotal": {
+        "proteinG": 9.2,
+        "fatG": 11.8,
+        "carbohydratesG": 4.1,
+        "kcal": 159.7
+      }
+    },
+    {
+      "name": "Обед",
+      "dishes": [
+        {
+          "name": "Салат из запечённых баклажанов и помидоров черри с кинзой и базиликом",
+          "ingredients": [
+            "помидоры черри",
+            "баклажаны",
+            "базилик",
+            "кинза",
+            "соевый соус",
+            "масло растительное"
+          ],
+          "servingG": [
+            100
+          ],
+          "nutrition": {
+            "proteinG": 1.6,
+            "fatG": 6.2,
+            "carbohydratesG": 5.2,
+            "kcal": 83.1
+          }
+        },
+        {
+          "name": "Хлеб из зелёной гречки с семенами чиа",
+          "ingredients": [],
+          "servingG": [
+            30
+          ],
+          "nutrition": {
+            "proteinG": 2.5,
+            "fatG": 1.6,
+            "carbohydratesG": 17.5,
+            "kcal": 94.1
+          }
+        },
+        {
+          "name": "Суп «Минестроне»",
+          "ingredients": [
+            "лук",
+            "морковь",
+            "масло оливковое",
+            "цукини",
+            "картофель",
+            "стебель сельдерея"
+          ],
+          "servingG": [
+            250
+          ],
+          "nutrition": {
+            "proteinG": 1.4,
+            "fatG": 1.8,
+            "carbohydratesG": 8.6,
+            "kcal": 56.3
+          }
+        }
+      ],
+      "hotChoices": [
+        {
+          "name": "Филе индейки, запечённое со шпинатом и шампиньонами, и рататуй с прованскими травами",
+          "ingredients": [
+            "индейка филе",
+            "паста соевая",
+            "соевый соус",
+            "масло растительное",
+            "шампиньоны",
+            "шпинат",
+            "сыр моцарелла",
+            "баклажаны",
+            "цукини",
+            "перец",
+            "лук",
+            "чеснок"
+          ],
+          "servingG": [
+            140,
+            100
+          ],
+          "nutrition": {
+            "proteinG": 25.5,
+            "fatG": 9.0,
+            "carbohydratesG": 8.9,
+            "kcal": 218.8
+          }
+        },
+        {
+          "name": "Зраза из брокколи с пармезаном и креветками",
+          "ingredients": [
+            "брокколи",
+            "яйцо куриное",
+            "чеснок",
+            "сыр пармезан",
+            "мука",
+            "паприка молотая",
+            "помидоры черри",
+            "креветки"
+          ],
+          "servingG": [
+            190
+          ],
+          "nutrition": {
+            "proteinG": 23.9,
+            "fatG": 7.2,
+            "carbohydratesG": 10.5,
+            "kcal": 201.8
+          }
+        }
+      ]
+    },
+    {
+      "name": "Полдник",
+      "dishes": [
+        {
+          "name": "Мусс из тыквы и сельдерея",
+          "ingredients": [
+            "тыква",
+            "стебель сельдерея",
+            "изюм"
+          ],
+          "servingG": [
+            100
+          ],
+          "nutrition": {
+            "proteinG": 1.1,
+            "fatG": 0.2,
+            "carbohydratesG": 10.9,
+            "kcal": 49.6
+          }
+        },
+        {
+          "name": "Конфеты тыквенные ручной работы",
+          "ingredients": [],
+          "servingG": [
+            10
+          ],
+          "nutrition": {
+            "proteinG": 1.0,
+            "fatG": 1.1,
+            "carbohydratesG": 2.3,
+            "kcal": 23.3
+          }
+        }
+      ],
+      "hotChoices": [],
+      "sourceSubtotal": {
+        "proteinG": 2.1,
+        "fatG": 1.3,
+        "carbohydratesG": 13.2,
+        "kcal": 72.9
+      }
+    },
+    {
+      "name": "Ужин",
+      "dishes": [
+        {
+          "name": "Салат из пряной рукколы с лапшой из соевых бобов и кисло-сладкой заправкой",
+          "ingredients": [
+            "руккола",
+            "спаржа",
+            "огурцы",
+            "фунчоза",
+            "кунжут",
+            "соевый соус",
+            "апельсин",
+            "лимон",
+            "нектар агавы",
+            "чеснок",
+            "помидоры черри"
+          ],
+          "servingG": [
+            110
+          ],
+          "nutrition": {
+            "proteinG": 1.8,
+            "fatG": 0.7,
+            "carbohydratesG": 13.6,
+            "kcal": 67.3
+          }
+        }
+      ],
+      "hotChoices": [
+        {
+          "name": "Сибас, приготовленный на пару, «под снегом» с овощным соте",
+          "ingredients": [
+            "сибас",
+            "соус песто",
+            "яйцо",
+            "лимон",
+            "тимьян",
+            "морковь",
+            "капуста цветная",
+            "капуста брокколи",
+            "перец",
+            "соевый соус",
+            "масло растительное"
+          ],
+          "servingG": [
+            85,
+            150
+          ],
+          "nutrition": {
+            "proteinG": 23.1,
+            "fatG": 12.9,
+            "carbohydratesG": 11.1,
+            "kcal": 253.0
+          }
+        },
+        {
+          "name": "Цукини, фаршированные курицей и овощами с соусом из сладкого перца",
+          "ingredients": [
+            "цукини",
+            "филе куриное",
+            "помидоры",
+            "морковь",
+            "перец",
+            "соевый соус",
+            "тимьян",
+            "лук",
+            "чеснок"
+          ],
+          "servingG": [
+            200,
+            40
+          ],
+          "nutrition": {
+            "proteinG": 20.6,
+            "fatG": 6.5,
+            "carbohydratesG": 11.9,
+            "kcal": 189.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Поздний ужин",
+      "dishes": [
+        {
+          "name": "Кисломолочный напиток",
+          "ingredients": [],
+          "servingG": [
+            250
+          ],
+          "nutrition": {
+            "proteinG": 7.4,
+            "fatG": 3.9,
+            "carbohydratesG": 17.6,
+            "kcal": 134.7
+          }
+        }
+      ],
+      "hotChoices": []
+    }
+  ]
+}

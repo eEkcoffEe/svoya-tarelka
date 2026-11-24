@@ -1,0 +1,379 @@
+{
+  "id": "menu-03-detox",
+  "weekday": "среда",
+  "name": "Детокс",
+  "source": {
+    "file": "Академия здорового образа 24(1).pdf",
+    "page": 6
+  },
+  "meals": [
+    {
+      "name": "Завтрак",
+      "dishes": [
+        {
+          "name": "Смузи-боул с манго и семенами льна",
+          "ingredients": [
+            "манго",
+            "молоко",
+            "семена льна",
+            "геркулес",
+            "мёд"
+          ],
+          "servingG": [
+            155
+          ],
+          "nutrition": {
+            "proteinG": 4.0,
+            "fatG": 2.6,
+            "carbohydratesG": 17.0,
+            "kcal": 107.6
+          }
+        },
+        {
+          "name": "Сыр Томмит",
+          "ingredients": [],
+          "servingG": [
+            15
+          ],
+          "nutrition": {
+            "proteinG": 5.7,
+            "fatG": 2.4,
+            "carbohydratesG": 0.0,
+            "kcal": 44.8
+          }
+        },
+        {
+          "name": "Хлебцы",
+          "ingredients": [],
+          "servingG": [
+            5
+          ],
+          "nutrition": {
+            "proteinG": 0.4,
+            "fatG": 0.2,
+            "carbohydratesG": 2.8,
+            "kcal": 14.8
+          }
+        },
+        {
+          "name": "Каша пшённая с изюмом на молоке без сахара",
+          "ingredients": [],
+          "servingG": [
+            200
+          ],
+          "nutrition": {
+            "proteinG": 6.1,
+            "fatG": 1.4,
+            "carbohydratesG": 24.4,
+            "kcal": 134.5
+          }
+        },
+        {
+          "name": "Белок варёного куриного яйца",
+          "ingredients": [
+            "белок"
+          ],
+          "servingG": [
+            40
+          ],
+          "nutrition": {
+            "proteinG": 4.4,
+            "fatG": 0.0,
+            "carbohydratesG": 0.4,
+            "kcal": 19.4
+          }
+        },
+        {
+          "name": "Шоколад горький",
+          "ingredients": [],
+          "servingG": [
+            5
+          ],
+          "nutrition": {
+            "proteinG": 0.5,
+            "fatG": 2.1,
+            "carbohydratesG": 1.9,
+            "kcal": 28.1
+          }
+        }
+      ],
+      "hotChoices": [],
+      "sourceSubtotal": {
+        "proteinG": 21.1,
+        "fatG": 8.7,
+        "carbohydratesG": 46.5,
+        "kcal": 349.2
+      }
+    },
+    {
+      "name": "Второй завтрак",
+      "dishes": [
+        {
+          "name": "Запеканка из творога с яблоками без сахара",
+          "ingredients": [
+            "творог",
+            "яблоко",
+            "манка",
+            "яйцо",
+            "масло растительное",
+            "хлеб пшеничный"
+          ],
+          "servingG": [
+            90
+          ],
+          "nutrition": {
+            "proteinG": 14.9,
+            "fatG": 4.1,
+            "carbohydratesG": 9.5,
+            "kcal": 134.3
+          }
+        }
+      ],
+      "hotChoices": [],
+      "sourceSubtotal": {
+        "proteinG": 14.9,
+        "fatG": 4.1,
+        "carbohydratesG": 9.5,
+        "kcal": 134.3
+      }
+    },
+    {
+      "name": "Обед",
+      "dishes": [
+        {
+          "name": "Салат из свежих помидоров и огурцов",
+          "ingredients": [],
+          "servingG": [
+            100
+          ],
+          "nutrition": {
+            "proteinG": 0.9,
+            "fatG": 5.2,
+            "carbohydratesG": 2.9,
+            "kcal": 61.3
+          }
+        },
+        {
+          "name": "Хлеб из зелёной гречки с семенами чиа",
+          "ingredients": [],
+          "servingG": [
+            5
+          ],
+          "nutrition": {
+            "proteinG": 2.5,
+            "fatG": 1.6,
+            "carbohydratesG": 17.5,
+            "kcal": 94.1
+          }
+        },
+        {
+          "name": "Суп-пюре из капусты брокколи",
+          "ingredients": [
+            "молоко",
+            "мука пшеничная",
+            "сливки",
+            "капуста брокколи",
+            "яйцо"
+          ],
+          "servingG": [
+            250
+          ],
+          "nutrition": {
+            "proteinG": 4.8,
+            "fatG": 3.6,
+            "carbohydratesG": 9.1,
+            "kcal": 87.9
+          }
+        }
+      ],
+      "hotChoices": [
+        {
+          "name": "Мясные рулетики с цукини в листьях нори под шпинатным соусом и овощные спагетти",
+          "ingredients": [
+            "вырезка",
+            "цукини",
+            "лук",
+            "водоросли нори",
+            "шпинат",
+            "сливки",
+            "соевый соус",
+            "морковь",
+            "перец",
+            "чеснок"
+          ],
+          "servingG": [
+            90,
+            40,
+            100
+          ],
+          "nutrition": {
+            "proteinG": 13.3,
+            "fatG": 10.3,
+            "carbohydratesG": 11.4,
+            "kcal": 191.3
+          }
+        },
+        {
+          "name": "Лосось в пергаменте с овощами и нутом",
+          "ingredients": [
+            "лосось",
+            "лимон",
+            "баклажан",
+            "перец",
+            "помидоры черри",
+            "чеснок",
+            "масло оливковое",
+            "кинза"
+          ],
+          "servingG": [
+            220
+          ],
+          "nutrition": {
+            "proteinG": 23.5,
+            "fatG": 10.9,
+            "carbohydratesG": 10.7,
+            "kcal": 234.9
+          }
+        }
+      ]
+    },
+    {
+      "name": "Полдник",
+      "dishes": [
+        {
+          "name": "Десерт «Чиа Сан»",
+          "ingredients": [
+            "семена чиа",
+            "смородина",
+            "йогурт",
+            "сахарозаменитель",
+            "ванилин"
+          ],
+          "servingG": [
+            150
+          ],
+          "nutrition": {
+            "proteinG": 3.1,
+            "fatG": 3.0,
+            "carbohydratesG": 7.5,
+            "kcal": 70.5
+          }
+        },
+        {
+          "name": "Конфеты фруктово-ягодные",
+          "ingredients": [],
+          "servingG": [
+            15
+          ],
+          "nutrition": {
+            "proteinG": 0.4,
+            "fatG": 0.0,
+            "carbohydratesG": 5.5,
+            "kcal": 25.3
+          }
+        }
+      ],
+      "hotChoices": [],
+      "sourceSubtotal": {
+        "proteinG": 3.5,
+        "fatG": 3.0,
+        "carbohydratesG": 13.0,
+        "kcal": 95.8
+      }
+    },
+    {
+      "name": "Ужин",
+      "dishes": [
+        {
+          "name": "Салат из морской капусты с овощами и вялеными помидорами",
+          "ingredients": [
+            "свёкла",
+            "морская капуста",
+            "перец",
+            "томаты вяленые"
+          ],
+          "servingG": [
+            100
+          ],
+          "nutrition": {
+            "proteinG": 1.2,
+            "fatG": 0.4,
+            "carbohydratesG": 5.7,
+            "kcal": 31.4
+          }
+        }
+      ],
+      "hotChoices": [
+        {
+          "name": "Судак на пару с мускатной тыквой с чечевицей",
+          "ingredients": [
+            "судак",
+            "лук",
+            "морковь",
+            "лимон",
+            "масло растительное",
+            "тыква",
+            "орех грецкий",
+            "чечевица",
+            "кинза"
+          ],
+          "servingG": [
+            100,
+            10,
+            80
+          ],
+          "nutrition": {
+            "proteinG": 26.0,
+            "fatG": 9.6,
+            "carbohydratesG": 11.7,
+            "kcal": 237.5
+          }
+        },
+        {
+          "name": "Шампиньоны, фаршированные говядиной, с соусом бешамель",
+          "ingredients": [
+            "шампиньоны",
+            "соевый соус",
+            "чеснок",
+            "говядина вырезка",
+            "мука полбяная",
+            "масло оливковое",
+            "молоко",
+            "сыр моцарелла",
+            "салат листовой",
+            "помидоры черри"
+          ],
+          "servingG": [
+            180,
+            40
+          ],
+          "nutrition": {
+            "proteinG": 28.6,
+            "fatG": 21.9,
+            "carbohydratesG": 1.4,
+            "kcal": 367.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Поздний ужин",
+      "dishes": [
+        {
+          "name": "Кисломолочный напиток",
+          "ingredients": [],
+          "servingG": [
+            250
+          ],
+          "nutrition": {
+            "proteinG": 7.4,
+            "fatG": 3.9,
+            "carbohydratesG": 17.6,
+            "kcal": 134.7
+          }
+        }
+      ],
+      "hotChoices": []
+    }
+  ]
+}
