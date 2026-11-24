@@ -13,7 +13,7 @@ const tyumenCatalog = [
   },
   {
     date:'12.11.2026', source:'https://tumen.shopoclick.ru/otchet',
-    products:['Гречка','Рис','Творог','Макароны'], kg:[1,1,0.2,0.45],
+    products:['Гречка','Рис','Творог','Макароны'], kg:[1,1,0.2,0.45], packG:[0,0,200,450],
     note:'Собственные марки', formats:{'Магнит':'Магнит Семейный','Лента':'Лента Гипер'},
     shops:{
       'Перекрёсток':[122,144,73,22], 'Магнит':[74,125,62,19],
@@ -43,7 +43,7 @@ function localQuotes(product){
     for(const [shop,values] of Object.entries(entry.shops)){
       const value=values[index];
       if(value===undefined||quotes.has(shop))continue;
-      quotes.set(shop,{shop,rate:value/entry.kg[index],url:entry.source,
+      quotes.set(shop,{shop,rate:value/entry.kg[index],price:value,packG:entry.packG?.[index]||0,url:entry.source,
         label:[entry.formats?.[shop]||shop,entry.date,entry.note,entry.details?.[index]].filter(Boolean).join(' · ')});
     }
   }

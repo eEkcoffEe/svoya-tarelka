@@ -8,3 +8,9 @@
 .shopping-item + .shopping-item { margin-top: 5px; }
 .shopping-rates { display: block; margin: 0 0 6px 28px; font-size: .85rem; }
 .shopping-rates ul { margin: 5px 0; padding-left: 20px; }
+
+.budget-price-form { margin: 12px 0; }
+.budget-price-grid { max-height: 340px; overflow: auto; margin-bottom: 10px; }
+.budget-price-row { display: grid; grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr)); gap: 8px; align-items: center; padding: 5px 0; }
+.budget-price-row label { min-width: 0; font-size: .85rem; }
+.budget-price-row input { width: 100%; }
