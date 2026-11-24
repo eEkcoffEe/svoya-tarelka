@@ -118,9 +118,14 @@ function firstQuestion(){
  window.scrollTo(0,0);
 }
 document.querySelector('.brand').addEventListener('click',event=>{
- if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
- event.preventDefault();
- firstQuestion();
+  if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+  event.preventDefault();
+  step=-1;
+  shopping=false;
+  save();
+  render();
+  app.focus({preventScroll:true});
+  window.scrollTo(0,0);
 });
 if(location.hash==='#start'){
  history.replaceState(null,'',location.pathname+location.search);
