@@ -4,3 +4,7 @@
 .meal-group h4 { margin: 8px 0; }
 .meal-group .field { margin: 8px 0; }
 .meal-group select { max-width: 100%; width: 100%; padding: 8px; font: inherit; }
+
+.shopping-item + .shopping-item { margin-top: 5px; }
+.shopping-rates { display: block; margin: 0 0 6px 28px; font-size: .85rem; }
+.shopping-rates ul { margin: 5px 0; padding-left: 20px; }

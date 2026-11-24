@@ -141,6 +141,34 @@ function buildPlan(){
 }
 
 const numberRu=value=>value.toLocaleString('ru-RU',{maximumFractionDigits:2});
+const priceProductAliases={
+  'капуста белокочанная':'Капуста',
+  'белокочанная капуста':'Капуста',
+  'лук репчатый':'Лук',
+  'яблоки':'Яблоко',
+  'груши':'Груша',
+  'филе куриное':'Куриное филе',
+};
+
+function shoppingItem({name,uses}){
+  const normalized=fold(name);
+  const product=priceProductAliases[normalized]||name.charAt(0).toUpperCase()+name.slice(1);
+  const quotes=localQuotes(product);
+  const selected=quotes.find(quote=>quote.shop===d.shop);
+  const best=quotes[0];
+  const rate=quote=>numberRu(quote.rate)+' ₽/кг';
+  const selectedRate=selected?`${esc(selected.shop)} · ${rate(selected)}`:`${esc(d.shop)} · цены нет`;
+  const priceInfo=best?`<details class="shopping-rates">
+    <summary>${selectedRate}${best!==selected?` · от ${rate(best)} в «${esc(best.shop)}»`:''}
+      · ${quotes.length>1?'сравнить цены':'источник цены'}</summary>
+    <ul>${quotes.map(quote=>`<li>${rate(quote)} · <a href="${esc(quote.url)}" target="_blank"
+      rel="noopener noreferrer">${esc(quote.label)}</a></li>`).join('')}</ul>
+  </details>`:'<small class="shopping-rates">В справочнике нет цены.</small>';
+  return `<div class="shopping-item"><label><input type="checkbox" data-buy="${esc(name)}"
+    ${d.checked.includes(name)?'checked':''}> <span>${esc(name)} <small>· в блюдах: ${uses}</small></span></label>
+    ${priceInfo}</div>`;
+}
+
 function dishDetails(dish){
   const {proteinG,fatG,carbohydratesG,kcal}=dish.nutrition;
   const portion=dish.servingG.length?'Выход порции · '+dish.servingG.join(' / ')+' г':'';
@@ -171,11 +199,10 @@ function result(){
       const details=[...dishes,...(selected?[selected]:[])].map(dishDetails).join('');
       return `<section class="meal-group"><h4>${name}${portionsText}</h4>${select}${details||'<p>По выбранным ограничениям блюда не найдены.</p>'}</section>`;
     }).join('')}</section>`).join('');
-  const basket=list.map(({name,uses})=>`<label><input type="checkbox" data-buy="${esc(name)}"
-    ${d.checked.includes(name)?'checked':''}> <span>${esc(name)} <small>· в блюдах: ${uses}</small></span></label>`).join('');
+  const basket=shopping?list.map(shoppingItem).join(''):'';
   const controls=opts(['Лайт','Детокс'],'program');
   const allergyNote=d.allergy.length?'<p>Фильтр ищет совпадения в названиях и указанном составе. Перед выбором блюда с аллергией проверьте полный состав.</p>':'';
-  const shoppingNote=shopping?`<p>Список по доступному составу. В меню указан выход блюд, поэтому граммовки продуктов и стоимость закупки не рассчитываются.</p>
+  const shoppingNote=shopping?`<p>Справочные цены в Тюмени указаны за килограмм. Дату и источник можно посмотреть у каждой цены. Для расчёта стоимости всей корзины нужны граммовки продуктов.</p>
     ${missing.size?`<details><summary>Блюда без списка ингредиентов · ${missing.size}</summary><p>${esc([...missing].join(', '))}</p></details>`:''}`:'';
   app.innerHTML=`<section class="panel"><div class="eyebrow">Ваш рацион · 7 дней</div><h2>${shopping?'Список покупок':'Меню на неделю'}</h2>
     <p>${esc(d.shop)} · бюджет на неделю ${numberRu(d.budget)} ₽</p>${controls}${allergyNote}

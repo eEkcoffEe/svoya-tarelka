@@ -35,13 +35,17 @@ const tyumenCatalog = [
   }
 ];
 
-function localQuote(shop,product){
+function localQuotes(product){
+  const quotes=new Map();
   for(const entry of tyumenCatalog){
     const index=entry.products.indexOf(product);
-    const value=entry.shops[shop]?.[index];
-    if(value===undefined)continue;
-    return {rate:value/entry.kg[index],url:entry.source,
-      label:[entry.formats?.[shop]||shop,entry.date,entry.note,entry.details?.[index]].filter(Boolean).join(' · ')};
+    if(index===-1)continue;
+    for(const [shop,values] of Object.entries(entry.shops)){
+      const value=values[index];
+      if(value===undefined||quotes.has(shop))continue;
+      quotes.set(shop,{shop,rate:value/entry.kg[index],url:entry.source,
+        label:[entry.formats?.[shop]||shop,entry.date,entry.note,entry.details?.[index]].filter(Boolean).join(' · ')});
+    }
   }
-  return null;
+  return [...quotes.values()].sort((a,b)=>a.rate-b.rate);
 }
